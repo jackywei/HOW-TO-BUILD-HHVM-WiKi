@@ -4,8 +4,6 @@ shopt -q
 # Facebook HipHop PHP ReInstaller     #
 # Written For Ubuntu 12.04            #
 #######################################
-# GitHub: github.com/jackywei         #
-#######################################
 
 UBUNTU_VERSION='12.04'
 LIBEVENT_VERSION='1.4.14'
