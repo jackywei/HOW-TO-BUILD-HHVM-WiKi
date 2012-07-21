@@ -1,0 +1,2 @@
+to reinstall your hiphop php(hhvm), no need to remove anything including all LIBs.
+you just need to clean your hiphop-php and reinstall it by using reinstall-hhvm.sh
