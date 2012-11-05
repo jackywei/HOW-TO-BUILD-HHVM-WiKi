@@ -1,2 +1,3 @@
-to reinstall your hiphop php(hhvm), no need to remove anything including all LIBs.
-you just need to clean your hiphop-php and reinstall it by using reinstall-hhvm.sh
+To Build HHVM in CentOS5.2, please refer to HHVM_CentOS5.2
+To Build HHVM in CentOS6.3, Please refer to HHVM_CentOS6.3
+To learn How to use HHVM, please refer to HHVM_Usage
