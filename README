@@ -3,6 +3,6 @@ Special Points in This build script:
 2. Total 4 scripts for build whole hhvm, including upgrade gcc.
 
 
-To Build HHVM in CentOS5.2, please refer to HHVM_CentOS5.2
-To Build HHVM in CentOS6.3, Please refer to HHVM_CentOS6.3
+To Build HHVM in CentOS5.2, please refer to CentOS5.2_HHVM
+To Build HHVM in CentOS6.3, Please refer to CentOS6.3_HHVM
 To learn How to use HHVM, please refer to HHVM_Usage
