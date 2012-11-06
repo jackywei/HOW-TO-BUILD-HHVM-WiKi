@@ -1,0 +1,61 @@
+#################################################
+# to build hhvm on centos5.2                    #
+# Jacky - Aug.28 2012                           #
+# bin.wei@intel.com                             #
+#################################################
+
+This build process is based on non-internet access environment, which means you could not get packages through wget, and normal yum.
+
+If you want to use script directly, please do the exact following step: 
+
+1. Download the build scripts from github: https://github.com/jackywei/HOW-TO-BUILD-HHVM-WiKi
+ which will include 2 folders: buildhhvm, gccbuild
+2. Setup your own build environment:
+	1> cd /home
+	2> mkdir /home/dev
+	3> mkdir /home/dev/centos
+	4> mkdir /home/dev/centos/dependsapp
+	5> mkdir /home/dev/centos/centosimage
+	6> mkdir /home/dev/centos/hhvmsrc
+	7> mkdir /home/dev/centos/hhvmsrc/oldcode
+3. Copy buildhhvm(from github) to /home/dev/centos/
+	chmod 755 buildhhvm/*.*
+	chmod 755 gccbuild/*.*
+4. Copy gccbuild(from github) to /home/dev/centos/
+5. Download following dependency packages from website and put these in /home/dev/centos/dependsapp/
+	1>bagder-curl-curl-7_27_0-67-ga90492a.zip
+	2>boost_1_50_0.tar.gz
+	3>icu4c-4_8_1_1-src.tgz
+	4>libc-client2007-2007e-8.el5.x86_64.rpm
+	5>libcclient2007-devel.tar.gz
+	6>libdwarf-20120410.tar.gz
+	7>libevent-libevent-release-1.4.14b-stable-0-geb8122f.zip
+	8>libmcrypt-2.5.8-9.1.x86_64.rpm
+	9>libmcrypt-devel-2.5.8-9.1.x86_64.rpm
+	10>libmemcached-0.49.tar.tar
+	11>libunwind-1.0.tar.gz
+	12>onig-5.9.2.tar.gz
+	14>tbb40_20120613oss_src.tgz
+6. Download following GCC and related lib packages and put these to /home/dev/centos/gccbuild/
+	1>gmp-4.3.2.tar.bz2  
+	2>mpfr-2.4.2.tar.bz2
+	3>mpc-0.8.1.tar.gz
+	4>gcc-4.6.1.tar.bz2  
+7. Download CentOS5.2 OS image: CentOS-5.8-x86_64-bin-DVD-1of2.iso. And put it to /home/dev/centos/centosimage/
+8. Download hhvm code from github: https://github.com/facebook/hiphop-php.git, and put the code zip which you want to build in /home/dev/centos/hhvmsrc, 
+	put the old version of hhvm code zip file to /home/dev/centos/hhvmsrc/oldcode/.
+9. Start to build HHVM:
+	1> Upgrade related lib/tools through 1_deprpm.sh
+			./1_deprpm.sh
+	2> Upgrade GCC to GCC4.6.1 through 2_gcc.sh
+			./2_gcc.sh
+	3> unzip hhvm code to /home/dev/hiphop-php through 3_unziphhvm.sh
+			source 3_unziphhvm.sh
+	4> Install Dependency Lib through depends_install.sh
+			./depends_install.sh
+	5> Build & Install HHVM through 15_hhvm.sh
+			./15_hhvm.sh
+10. run hhvm --version to check if hhvm is installed ok.
+
+Any issue, please contact with me through bin.wei@intel.com.
+GOOD LUCK!!
