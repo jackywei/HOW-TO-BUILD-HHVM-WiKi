@@ -1,6 +1,6 @@
 Special Points in This build script:
 1. Support non-internet environment build
-2. Total 4 scripts for build whole hhvm, including upgrade gcc.
+2. Total 5 scripts for build whole hhvm, including upgrade gcc.
 
 
 To Build HHVM in CentOS5.2, please refer to CentOS5.2_HHVM
