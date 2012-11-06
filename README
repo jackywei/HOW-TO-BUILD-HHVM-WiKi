@@ -1,3 +1,8 @@
+Special Points in This build script:
+1. Support non-internet environment build
+2. Total 4 scripts for build whole hhvm, including upgrade gcc.
+
+
 To Build HHVM in CentOS5.2, please refer to HHVM_CentOS5.2
 To Build HHVM in CentOS6.3, Please refer to HHVM_CentOS6.3
 To learn How to use HHVM, please refer to HHVM_Usage
