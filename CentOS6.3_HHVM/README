@@ -37,7 +37,7 @@ If you want to use script directly, please do the exact following step:
 	2>mpfr-2.4.2.tar.bz2
 	3>mpc-0.8.1.tar.gz
 	4>gcc-4.6.1.tar.bz2  
-7. Download CentOS6.3 OS image: CentOS-5.8-x86_64-bin-DVD-1of2.iso. And put it to /home/dev/centos/centosimage/
+7. Download CentOS6.3 OS image: CentOS-6.3-x86_64-bin-DVD1.iso & CentOS-6.3-x86_64-bin-DVD2.iso. And put these to /home/dev/centos/centosimage/
 8. Download hhvm code from github: https://github.com/facebook/hiphop-php.git, and put the code zip which you want to build in /home/dev/centos/hhvmsrc, 
 	put the old version of hhvm code zip file to /home/dev/centos/hhvmsrc/oldcode/.
 9. Start to build HHVM:
