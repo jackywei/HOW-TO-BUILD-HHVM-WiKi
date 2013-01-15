@@ -28,3 +28,5 @@ echo install libmemcached
 echo install boost
 ./11_boost.sh
 
+echo install google_glog
+./google_glog.sh
