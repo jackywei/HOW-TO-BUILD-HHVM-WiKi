@@ -5,7 +5,7 @@
 #################################################
 
 
-tar jxf gcc-4.6.1.tar.bz2 ;cd gcc-4.6.1
+tar jxf gcc-4.6.3.tar.bz2 ;cd gcc-4.6.3
 ./configure --prefix=/usr/local/gcc -enable-threads=posix -disable-checking -disable-multilib -enable-languages=c,c++ -with-gmp=/usr/local/gmp -with-mpfr=/usr/local/mpfr/ -with-mpc=/usr/local/mpc/
 
 if

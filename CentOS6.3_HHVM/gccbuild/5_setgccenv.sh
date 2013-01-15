@@ -4,7 +4,7 @@
 # bin.wei@intel.com                             #
 #################################################
 
-cp gcc.4.6.1.conf /etc/ld.so.conf.d/gcc.4.6.1.conf
+cp gcc.4.6.3.conf /etc/ld.so.conf.d/gcc.4.6.3.conf
 ldconfig
 mv /usr/bin/gcc  /usr/bin/gcc_old
 mv /usr/bin/g++  /usr/bin/g++_old
