@@ -37,3 +37,5 @@ echo install c-client
 echo install boost
 ./14_boost.sh
 
+echo install google_glog
+./google_glog.sh
