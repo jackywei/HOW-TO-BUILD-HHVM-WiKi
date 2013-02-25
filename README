@@ -1,4 +1,4 @@
-Special Points in This build script:
+Special Points in This build script: https://github.com/jackywei/HOW-TO-BUILD-HHVM-WiKi/wiki/_pages
 1. Support non-internet environment build
 2. Total 5 scripts for build whole hhvm, including upgrade gcc.
 
